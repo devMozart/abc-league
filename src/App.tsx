@@ -1,38 +1,44 @@
-import * as React from "react"
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
+import { useState } from "react";
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import SwipeablePages from "./components/SwipeablePages";
+import Page from "./components/Page";
+import StartPage from "./components/StartPage";
+import pageData from "./data/pageData.json";
+import EndPage from "./components/EndPage";
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
-    </Box>
-  </ChakraProvider>
-)
+interface PageData {
+  letter: string;
+  rhyme: string;
+  image: string;
+}
+
+export const App = () => {
+  const [[currentPage, direction], setCurrentPage] = useState([0, 0]);
+
+  const onStartOver = () => {
+    setCurrentPage([0, -1]);
+  };
+
+  const pages = [
+    { content: <StartPage /> },
+    ...pageData.map((page: PageData) => {
+      return {
+        content: (
+          <Page letter={page.letter} text={page.rhyme} image={page.image} />
+        ),
+      };
+    }),
+    { content: <EndPage onStartOver={onStartOver} /> },
+  ];
+
+  return (
+    <ChakraProvider theme={theme}>
+      <SwipeablePages
+        pages={pages}
+        currentPage={currentPage}
+        direction={direction}
+        setCurrentPage={setCurrentPage}
+      />
+    </ChakraProvider>
+  );
+};

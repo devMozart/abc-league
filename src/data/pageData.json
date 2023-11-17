@@ -1,0 +1,132 @@
+[
+  {
+    "letter": "A",
+    "rhyme": "A is for Amumu, alone and so blue",
+    "image": "amumu.webp"
+  },
+  {
+    "letter": "B",
+    "rhyme": "B for Bard, with chimes to pursue",
+    "image": "bard.webp"
+  },
+  {
+    "letter": "C",
+    "rhyme": "C is for Caitlyn, a sheriff so brave",
+    "image": "caitlyn.webp"
+  },
+  {
+    "letter": "D",
+    "rhyme": "D for Darius, with an axe that he wave",
+    "image": "darius.webp"
+  },
+  {
+    "letter": "E",
+    "rhyme": "E is for Ezreal, an explorer so bold",
+    "image": "ezreal.webp"
+  },
+  {
+    "letter": "F",
+    "rhyme": "F for Fiddlesticks, whose scare never gets old",
+    "image": "fiddlesticks.webp"
+  },
+  {
+    "letter": "G",
+    "rhyme": "G is for Garen, in bushes he waits",
+    "image": "garen.webp"
+  },
+  {
+    "letter": "H",
+    "rhyme": "H for Heimerdinger, with turrets that bait",
+    "image": "heimerdinger.webp"
+  },
+  {
+    "letter": "I",
+    "rhyme": "I is for Irelia, her blades dance with grace",
+    "image": "irelia.webp"
+  },
+  {
+    "letter": "J",
+    "rhyme": "J for Jinx, with a rocket to race",
+    "image": "jinx.webp"
+  },
+  {
+    "letter": "K",
+    "rhyme": "K is for Katarina, who shunpos with flair",
+    "image": "katarina.webp"
+  },
+  {
+    "letter": "L",
+    "rhyme": "L for Lux, whose light fills the air",
+    "image": "lux.webp"
+  },
+  {
+    "letter": "M",
+    "rhyme": "M is for Morgana, with chains to bind tight",
+    "image": "morgana.webp"
+  },
+  {
+    "letter": "N",
+    "rhyme": "N for Nasus, stacking his might",
+    "image": "nasus.webp"
+  },
+  {
+    "letter": "O",
+    "rhyme": "O is for Orianna, who dances with gears",
+    "image": "orianna.webp"
+  },
+  {
+    "letter": "P",
+    "rhyme": "P for Pyke, lurking in waters of fears",
+    "image": "pyke.webp"
+  },
+  {
+    "letter": "Q",
+    "rhyme": "Q is for Qiyana, the empress so proud",
+    "image": "qiyana.webp"
+  },
+  {
+    "letter": "R",
+    "rhyme": "R for Rakan, who charms the crowd",
+    "image": "rakan.webp"
+  },
+  {
+    "letter": "S",
+    "rhyme": "S is for Sona, her melodies heal",
+    "image": "sona.webp"
+  },
+  {
+    "letter": "T",
+    "rhyme": "T for Teemo, with mushrooms to peel",
+    "image": "teemo.webp"
+  },
+  {
+    "letter": "U",
+    "rhyme": "U is for Urgot, a terror to behold",
+    "image": "urgot.webp"
+  },
+  {
+    "letter": "V",
+    "rhyme": "V for Volibear, with strength untold",
+    "image": "volibear.webp"
+  },
+  {
+    "letter": "W",
+    "rhyme": "W is for Warwick, who howls at the moon",
+    "image": "warwick.webp"
+  },
+  {
+    "letter": "X",
+    "rhyme": "X for Xayah, whose feathers will swoon",
+    "image": "xayah.webp"
+  },
+  {
+    "letter": "Y",
+    "rhyme": "Y is for Yorick, with ghouls in command",
+    "image": "yorick.webp"
+  },
+  {
+    "letter": "Z",
+    "rhyme": "Z for Zoe, through portals she'll land",
+    "image": "zoe.webp"
+  }
+]
