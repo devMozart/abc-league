@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChakraProvider, theme } from "@chakra-ui/react";
 import SwipeablePages from "./components/SwipeablePages";
 import Page from "./components/Page";
@@ -18,6 +18,14 @@ export const App = () => {
   const onStartOver = () => {
     setCurrentPage([0, -1]);
   };
+
+  useEffect(() => {
+    // Preload images
+    pageData.forEach((data) => {
+      const img = new Image();
+      img.src = `/images/champions/${data.image}`;
+    });
+  }, []);
 
   const pages = [
     { content: <StartPage /> },
