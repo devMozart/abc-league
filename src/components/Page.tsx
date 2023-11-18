@@ -46,7 +46,6 @@ const Page: React.FC<PageProps> = ({ letter, text, image }) => {
         <Fade in={fadeIn} transition={{ enter: { duration: 1 } }}>
           <Text
             sx={{
-              WebkitTextStroke: "1px black",
               textShadow: `1px 1px 0 #000,
      -1px -1px 0 #000,  
       1px -1px 0 #000,
@@ -65,7 +64,6 @@ const Page: React.FC<PageProps> = ({ letter, text, image }) => {
         <Text
           sx={{
             fontWeight: 700,
-            WebkitTextStroke: "2px black",
             textShadow: `2px 2px 0 #000,
    -1px -1px 0 #000,  
     1px -1px 0 #000,
