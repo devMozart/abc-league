@@ -83,7 +83,7 @@ const EndPage: React.FC<EndPageProps> = ({ onStartOver }) => {
         <Fade in={fadeInText1} transition={{ enter: { duration: 1 } }}>
           <Text color="#f7be5c" fontSize="3vh" fontWeight={600}>
             Now close your eyes,
-            <br /> dream of champs far and wide,
+            <br /> dream of champs far and wide.
           </Text>
         </Fade>
         <Fade in={fadeInText2} transition={{ enter: { duration: 1 } }}>
@@ -103,7 +103,7 @@ const EndPage: React.FC<EndPageProps> = ({ onStartOver }) => {
         </Fade>
         <Fade in={fadeInText3} transition={{ enter: { duration: 1 } }}>
           <Text fontSize="3vh" fontWeight={600}>
-            🌙✨
+            🌙 ✨
           </Text>
         </Fade>
       </Box>

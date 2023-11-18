@@ -47,6 +47,11 @@ const Page: React.FC<PageProps> = ({ letter, text, image }) => {
           <Text
             sx={{
               WebkitTextStroke: "1px black",
+              textShadow: `1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000`,
             }}
             fontSize="6vh"
             fontWeight={900}
@@ -60,11 +65,15 @@ const Page: React.FC<PageProps> = ({ letter, text, image }) => {
         <Text
           sx={{
             fontWeight: 700,
-            backgroundImage: "linear-gradient(to bottom, #fefcf3, #ffbd4d)",
-            backgroundClip: "text",
             WebkitTextStroke: "2px black",
+            textShadow: `2px 2px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000`,
           }}
           fontSize="20vh"
+          color="#f7be5c"
         >
           {letter}
         </Text>
